@@ -12,7 +12,7 @@ const InfoComponent = () => {
   return (
     <div className="info">
       <div className="Title">
-        <div className="Logo"><img className="LogoImage" src="Logo.png" alt="Logo" /></div>
+        <div className="Logo"><img className="LogoImage" src="/Logo.png" alt="Logo" /></div>
         <div className="Name"><p className="NameApp">QuakeGen</p></div>
       </div>
       <div className="Numbers">
