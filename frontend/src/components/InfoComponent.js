@@ -1,5 +1,6 @@
 import React from 'react';
-import './styles.css';
+// Import component specific styles
+import './styles/styles.css';
 
 const InfoComponent = () => {
   const updateValue = (el) => {
