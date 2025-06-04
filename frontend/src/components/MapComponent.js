@@ -8,6 +8,9 @@ const MapComponent = ({ setMap }) => {
     // Check if the map is already initialized
     let map = L.map('map', { preferCanvas: true });
 
+    // expose the map instance to the parent so other components can use it
+    setMap(map);
+
     map.setView([51.505, -0.09], 13); // Change coordinates as needed
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -19,6 +22,8 @@ const MapComponent = ({ setMap }) => {
       if (map) {
         map.remove();
       }
+      // reset parent state when the component unmounts
+      setMap(null);
     };
   }, [setMap]);
 
