@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import L from 'leaflet';
-import './styles.css';
+// Import map layout styles
+import './styles/styles.css';
 
 const MapComponent = ({ setMap }) => {
   useEffect(() => {
